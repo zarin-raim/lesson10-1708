@@ -7,20 +7,30 @@ namespace classwork
 {
     class Program
     {
+        //sealed - для запрета наследников 
+        //partial - разбитый на несколько файлов класс
+        //abstract - для запрета объектов этого типа
+
         static void Main(string[] args)
         {
-            Person person = new Person();
-            Person doctor = new Doctor();
-            ((Doctor)doctor).Salary = 1000;
+            int number = 5;
+            Object obj = number;
+            int number2 = (int)obj;
 
-            //is/as
 
-            if(doctor is Doctor)
-            {
+
+            //Person person = new Person();
+            //Person doctor = new Doctor();
+            //((Doctor)doctor).Salary = 1000;
+
+            ////is/as
+
+            //if(doctor is Doctor)
+            //{
                 
-            }
+            //}
 
-            (doctor as Doctor).Salary = 1;
+            //(doctor as Doctor).Salary = 1;
         }
     }
 }

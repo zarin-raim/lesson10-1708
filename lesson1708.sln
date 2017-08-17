@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classwork", "classwork\classwork.csproj", "{3833ED1B-003B-48C8-BA1E-541690AF5FCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practicalwork", "practicalwork\practicalwork.csproj", "{F63BA294-F53E-4C40-9000-70B4414E5320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupAppLibrary", "BackupAppLibrary\BackupAppLibrary.csproj", "{F3E87F1E-BE18-45D6-94C4-984B8DD318EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3833ED1B-003B-48C8-BA1E-541690AF5FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3833ED1B-003B-48C8-BA1E-541690AF5FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3833ED1B-003B-48C8-BA1E-541690AF5FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63BA294-F53E-4C40-9000-70B4414E5320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63BA294-F53E-4C40-9000-70B4414E5320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63BA294-F53E-4C40-9000-70B4414E5320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63BA294-F53E-4C40-9000-70B4414E5320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E87F1E-BE18-45D6-94C4-984B8DD318EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E87F1E-BE18-45D6-94C4-984B8DD318EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E87F1E-BE18-45D6-94C4-984B8DD318EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E87F1E-BE18-45D6-94C4-984B8DD318EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
