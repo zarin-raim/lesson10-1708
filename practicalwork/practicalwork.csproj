@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3833ED1B-003B-48C8-BA1E-541690AF5FCB}</ProjectGuid>
+    <ProjectGuid>{F63BA294-F53E-4C40-9000-70B4414E5320}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>classwork</RootNamespace>
-    <AssemblyName>classwork</AssemblyName>
+    <RootNamespace>practicalwork</RootNamespace>
+    <AssemblyName>practicalwork</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Doctor.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
