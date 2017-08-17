@@ -22,7 +22,7 @@ namespace BackupAppLibrary
         }
 
         public abstract double GetStorageValue();
-        public abstract int CopyDataToDevice(File[] files, out DateTime time, out double remainingValue);
+        public abstract void CopyDataToDevice(File[] files, out double timeSpend, out File[] remainingFiles);
         public abstract double GetFreeSpaceValue();
         public abstract string GetDeviceInfo();
     }

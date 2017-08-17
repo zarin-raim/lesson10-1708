@@ -38,26 +38,27 @@ namespace BackupAppLibrary
         }
         #endregion
 
-        #region Methods
-        public override int CopyDataToDevice(File[] files, out DateTime time, out double remainingValue)
+#region Methods
+        public override void CopyDataToDevice(File[] files, out double timeSpend, out File[] remainingFiles)
         {
             double filesSize = 0;
-            for (int i = 0; i < files.Length; i++)
-                filesSize += files[i].Size;                        //объем который нужно записать
 
-            int devices = (int)(filesSize / StorageValue);         //колличество необходимых устройств этого вида
+            int i = 0;
+            while(filesSize < StorageValue)
+                filesSize += files[i++].Size;                        //объем который запишется
 
-            remainingValue = filesSize - (devices * StorageValue); //непоместившийся объем памяти
+            timeSpend = filesSize / SpeedUsb30;
+            FreeSpace = StorageValue - filesSize;
 
-            if (remainingValue <= 0)
-                FreeSpace = StorageValue - filesSize;              //вычисление свободного места, если все файлы записались полностью
-
-            return devices;
+            remainingFiles = new File[files.Length - i];
+            int j = 0;
+            while (i < files.Length)
+                remainingFiles[j++] = files[i];            
         }
 
         public override string GetDeviceInfo()
         {
-            return String.Format("\nSpeed USB3.0 - {0}\nStorage Value - {1}\nFree Space - {2}", SpeedUsb30, StorageValue, FreeSpace);
+            return String.Format("{0}{1}\nSpeed - {2}\nStorage Value - {3}\nFree Space - {4}\n", Name, Model, SpeedUsb30, StorageValue, FreeSpace);
         }
 
         public override double GetFreeSpaceValue()
